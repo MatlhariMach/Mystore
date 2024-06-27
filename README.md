@@ -5,22 +5,22 @@ MyStore is an online shopping application with the following features...
 ## Screenshots
 
 ### Home Page
-![Home Page](screenshot/Home.png)
+![Home Page](Screenshot/Home.png)
 
 ### Register
-![Register](screenshot/Register.png)
+![Register](Screenshot/Register.png)
 
 ### Login
-![Home Page](screenshot/Login.png)
+![Home Page](Screenshot/Login.png)
 
 ### Cart Page
-![Home Page](screenshot/Carthighlight.png)
+![Home Page](Screenshot/Carthighlight.png)
 
 ### Cart Items
-![Cart Page](screenshot/CartItems.png)
+![Cart Page](Screenshot/CartItems.png)
 
 ### Order Complete
-![Order Complete](screenshot/Complete.png)
+![Order Complete](Screenshot/Complete.png)
 
 ### Order Summary
-![Order Summary](screenshot/Receit.png)
+![Order Summary](Screenshot/Receit.png)
