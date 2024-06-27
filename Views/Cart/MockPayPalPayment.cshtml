@@ -1,0 +1,16 @@
+﻿@model decimal
+
+@{
+    ViewData["Title"] = "PayPal Payment Simulation";
+}
+
+<h2>PayPal Payment Simulation</h2>
+<p>Total Amount: @Model.ToString("C")</p>
+
+<p>This is a simulation of the PayPal payment process.</p>
+
+<form asp-controller="Cart" asp-action="CompletePayment" method="post">
+    <input type="hidden" name="totalAmount" value="@Model" />
+    <button type="submit" class="btn btn-primary">Complete Payment</button>
+</form>
+

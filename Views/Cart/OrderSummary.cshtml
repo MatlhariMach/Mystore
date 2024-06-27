@@ -1,0 +1,49 @@
+﻿@model Mystore.Models.OrderSummaryViewModel
+
+@{
+    ViewData["Title"] = "Order Summary";
+}
+
+<h2 class="mb-4">Order Summary</h2>
+
+<div class="card">
+    <div class="card-header bg-primary text-white">
+        <h5 class="mb-0">Order #@Model.Id</h5>
+    </div>
+    <div class="card-body">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <h5 class="card-title">Order Date:</h5>
+                <p class="card-text">@Model.OrderDate.ToString("g")</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+                <h5 class="card-title">Total Amount:</h5>
+                @foreach (var item in Model.OrderItems)
+                {
+                <p class="card-text">@item.UnitPrice.ToString("C")</p>
+                }
+            </div>
+        </div>
+        <hr />
+        <h5 class="mb-3">Order Items</h5>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th class="text-center">Quantity</th>
+                    <th class="text-right">Total Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.OrderItems)
+                {
+                    <tr>
+                        <td>@item.ProductName</td>
+                        <td class="text-center">@item.Quantity</td>
+                        <td class="text-right">@item.UnitPrice.ToString("C")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
