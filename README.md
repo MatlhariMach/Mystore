@@ -24,3 +24,15 @@ MyStore is an online shopping application with the following features...
 
 ### Order Summary
 ![Order Summary](Screenshot/Receit.png)
+
+### Admin Products
+![Admin Products](Screenshot/Products.png)
+
+### Admin Edit
+![Admin Summary](Screenshot/Edit.png)
+
+### Admin Details
+![Admin Details](Screenshot/Details.png)
+
+### Create Create
+![Admin Create](Screenshot/Create.png)
